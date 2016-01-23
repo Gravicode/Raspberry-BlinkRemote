@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="Blink.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Blink"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock TextAlignment="Center" Margin="20 20 20 20" Text="Welcome to Remote Blink App" Foreground="SteelBlue" FontSize="35"></TextBlock>
+            <TextBlock x:ConnectionId='1' TextAlignment="Center" FontSize="20" Name="GpioStatus"></TextBlock>
+            <TextBlock x:ConnectionId='2' TextAlignment="Center" FontSize="20" Name="TxtMsg"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>
+
